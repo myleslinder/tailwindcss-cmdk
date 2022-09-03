@@ -18,8 +18,8 @@ const ariaAttributes = ["aria-disabled", "aria-selected"];
 const groupMerge = ":merge(.group)";
 const peerMerge = ":merge(.peer)";
 
-const cmdkPlugin: PluginCreator = ({ addVariant, e }) => {
-  addVariant("cmdk-group-heading", e('& > [cmdk-group-heading=""]'));
+const cmdkPlugin: PluginCreator = ({ addVariant }) => {
+  addVariant("cmdk-group-heading", '& > [cmdk-group-heading=""]');
 
   dataAttributes.forEach((attribute) => {
     const variantName = `${prefix}-${attribute}`;
@@ -27,37 +27,37 @@ const cmdkPlugin: PluginCreator = ({ addVariant, e }) => {
     const groupSelector = `group-${variantName}`;
     const peerSelector = `peer-${variantName}`;
 
-    addVariant(variantName, e(`&${selector}`));
-    addVariant(groupSelector, e(`${groupMerge}${selector} &`));
-    addVariant(peerSelector, e(`${peerMerge}${selector} ~ &`));
+    addVariant(variantName, `&${selector}`);
+    addVariant(groupSelector, `${groupMerge}${selector} &`);
+    addVariant(peerSelector, `${peerMerge}${selector} ~ &`);
 
     if (attribute === "item") {
       ariaAttributes.forEach((ariaAttribute) => {
         const ariaSelector = `[${ariaAttribute}="true"]`;
         addVariant(
           `${variantName}-${ariaAttribute}`,
-          e(`&${selector}${ariaSelector}`)
+          `&${selector}${ariaSelector}`
         );
         addVariant(
           `${groupSelector}-${ariaAttribute}`,
-          e(`${groupMerge}${selector}${ariaSelector} &`)
+          `${groupMerge}${selector}${ariaSelector} &`
         );
         addVariant(
           `${peerSelector}-${ariaAttribute}`,
-          e(`${peerMerge}${selector}${ariaSelector} ~ &`)
+          `${peerMerge}${selector}${ariaSelector} ~ &`
         );
       });
     }
     if (attribute === "group") {
       const hiddenSelector = '[hidden="true"]';
-      addVariant(`${variantName}-hidden`, e(`&${selector}${hiddenSelector}`));
+      addVariant(`${variantName}-hidden`, `&${selector}${hiddenSelector}`);
       addVariant(
         `${groupSelector}-hidden`,
-        e(`${groupMerge}${selector}${hiddenSelector} &`)
+        `${groupMerge}${selector}${hiddenSelector} &`
       );
       addVariant(
         `${peerSelector}-hidden`,
-        e(`${peerMerge}${selector}${hiddenSelector} ~ &`)
+        `${peerMerge}${selector}${hiddenSelector} ~ &`
       );
     }
   });
