@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-cmdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "github.com/pacocoursey/cmdk attribute selectors for tailwind",
   "main": "dist/index.js",
   "scripts": {
