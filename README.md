@@ -38,7 +38,7 @@ module.exports = {
 
 ### Group & Peer usage
 
-There are variants for `group` and `peer` for all the attributes and they're the same just prefixed with `group-` and `peer-` respectively (e.g. `group-cmdk-input:`).
+There are variants for `group` and `peer` for all the attributes and they're the same just prefixed with `group-` and `peer-` respectively (e.g. `peer-cmdk-input:`).
 
 ### cmdk-item Aria states
 
