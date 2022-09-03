@@ -1,8 +1,14 @@
 # tailwindcss-cmdk
 
-![tailwindcss v3
-    ready](https://img.shields.io/badge/tailwindcss-v3%20ready-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
-![npm version](https://img.shields.io/npm/v/tailwindcss-cmdk.svg)
+<p>
+<a href="https://tailwindcss.com" target="_blank">
+  <img alt="TailwindCSS V3 ready" src="https://img.shields.io/badge/tailwindcss-v3%20ready-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff" />
+</a>
+<a href="https://www.npmjs.com/package/tailwindcss-cmdk" target="_blank">
+  <img alt="npm version" src="https://img.shields.io/npm/v/tailwindcss-cmdk.svg" />
+</a>
+
+</p>
 
 Variants for styling [cmdk](https://github.com/pacocoursey/cmdk) attributes.
 
@@ -51,8 +57,3 @@ The `cmdk-root` attribute includes base, group, and peer variants for the `hidde
 ## License
 
 MIT
-
-<!--
-[![tailwindcss v3 ready](https://img.shields.io/badge/tailwindcss-v3%20ready-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)](https://tailwindcss.com)
-[![npm version](https://img.shields.io/npm/v/tailwindcss-cmdk.svg)](https://www.npmjs.com/package/tailwindcss-cmdk)
- -->

@@ -7,6 +7,11 @@
     "build": "tsup src/index.ts",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myleslinder/tailwindcss-cmdk.git"
+  },
+  "homepage": "https://github.com/myleslinder/tailwindcss-cmdk",
   "tsup": {
     "entry": [
       "src/index.ts"
