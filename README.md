@@ -1,19 +1,10 @@
 # tailwindcss-cmdk
 
-<div align="center">
-  <a href="https://tailwindcss.com"
-    >![tailwindcss v3
-    ready](https://img.shields.io/badge/tailwindcss-v3%20ready-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)</a
-  >
-  <a href="https://www.npmjs.com/package/tailwindcss-cmdk"
-    >![npm version](https://img.shields.io/npm/v/tailwindcss-cmdk.svg)</a
-  >
-</div>
+![tailwindcss v3
+    ready](https://img.shields.io/badge/tailwindcss-v3%20ready-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
+![npm version](https://img.shields.io/npm/v/tailwindcss-cmdk.svg)
 
-</br>
-<p align="center">
-  Variants for styling [cmdk](https://github.com/pacocoursey/cmdk) attributes.
-</p>
+Variants for styling [cmdk](https://github.com/pacocoursey/cmdk) attributes.
 
 ## Installation
 
