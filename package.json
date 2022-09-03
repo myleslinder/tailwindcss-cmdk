@@ -4,7 +4,8 @@
   "description": "github.com/pacocoursey/cmdk attribute selectors for tailwind",
   "main": "dist/index.js",
   "scripts": {
-    "bundle": "tsup src/index.ts"
+    "bundle": "tsup src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "tsup": {
     "entry": [
